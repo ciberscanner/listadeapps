@@ -8,5 +8,8 @@
     <string name="title">Title</string>
     <string name="guion">-</string>
     <string name="sle">Selecciona una de las categorías para listar las apps</string>
+    <string name="name">Nombre</string>
+    <string name="desc">Descripción</string>
+    <string name="pro">Creador:</string>
 
 </resources>

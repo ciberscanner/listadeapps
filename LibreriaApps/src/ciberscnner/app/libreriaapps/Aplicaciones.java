@@ -97,7 +97,7 @@ public class Aplicaciones extends Activity {
 							.findViewById(R.id.imageView_imagen);
 					if (imagen_entrada != null) {
 						if (imagen_entrada != null) {
-							Picasso.with(ctx).load("http://is1.mzstatic.com/image/thumb/Purple49/v4/da/f7/0d/daf70dab-00ed-adbe-2804-82f7bce69e50/mzl.qpphshuu.png/53x53bb-85.png").into(imagen_entrada);							
+							Picasso.with(ctx).load(((App) entrada).pictures.get(1)).into(imagen_entrada);							
 					}
 				}
 			}
@@ -110,11 +110,11 @@ public class Aplicaciones extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> pariente, View view, int posicion, long id) {
 
-				String[] v = { app.listaApps.get(posicion).getId(), app.listaApps.get(posicion).getName(),
-						app.listaApps.get(posicion).getSumary(), app.listaApps.get(posicion).getPrice(),
-						app.listaApps.get(posicion).getContentype(), app.listaApps.get(posicion).getRights(),
-						app.listaApps.get(posicion).getLink(), app.listaApps.get(posicion).getArtist(),
-						app.listaApps.get(posicion).getCategory(), app.listaApps.get(posicion).getRelasedate()};
+				String[] v = { listaAux.get(posicion).getName(),listaAux.get(posicion).getSumary(), 
+						listaAux.get(posicion).getRights(),listaAux.get(posicion).pictures.get(1), 
+						listaAux.get(posicion).getContentype(), listaAux.get(posicion).getPrice(),
+						listaAux.get(posicion).getLink(), listaAux.get(posicion).getArtist(),
+						listaAux.get(posicion).getRelasedate()};
 
 				gotoActivity(v);
 			}

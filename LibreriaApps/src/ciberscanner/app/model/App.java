@@ -23,6 +23,7 @@ public class App {
 	private String artist;
 	private String category;
 	private String relasedate;
+	public ArrayList<String> pictures = new ArrayList<String>();
 
 	private String[] labels = { "im:name", "im:image", "summary", "im:price", "im:contentType", "rights", "link", "id",
 			"im:artist", "category", "im:releaseDate" };
@@ -92,9 +93,18 @@ public class App {
 	}
 
 	// -----------------------------------------------------------------------------------
-	/**Filtra los json internos*/
+	/** Filtra los json internos */
 	private void filtros(App aux) {
 		aux.setName(getSubJson(aux.getName(), "label"));
+
+		ImageApp ima = new ImageApp();
+
+		if (ima.getImagesFromJson(aux.getImage()) == 1) {
+			for (int i = 0; i < ima.listimages.size(); i++) {
+				aux.pictures.add(ima.listimages.get(i).getUrl());
+			}
+		}
+		aux.setRights(getSubJson(aux.getRights(), "label"));
 		aux.setCategory(getSubJson(aux.getCategory(), "label"));
 		aux.setSumary(getSubJson(aux.getSumary(), "label"));
 
@@ -105,7 +115,7 @@ public class App {
 	private String getSubJson(String json, String label) {
 		try {
 			JSONObject jsonObject = new JSONObject(removeString(json));
-			//Log.v("Resultado: ", jsonObject.getString(label));
+			// Log.v("Resultado: ", jsonObject.getString(label));
 			return jsonObject.getString(label);
 		} catch (Exception ex) {
 			Log.v("Error: ", "pailas");

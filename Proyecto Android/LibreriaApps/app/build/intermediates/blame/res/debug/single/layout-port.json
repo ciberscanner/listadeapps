@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout-port/simplerow.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout-port/simplerow.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout-port/contentapp.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout-port/contentapp.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout-port/activity_splash.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout-port/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout-port/entrada.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout-port/entrada.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout-port/activity_aplicaciones.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout-port/activity_aplicaciones.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout-port/fragment_list_apps.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout-port/fragment_list_apps.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout-port/item_categoria.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout-port/item_categoria.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout-port/activity_categorias.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout-port/activity_categorias.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout-port/header.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout-port/header.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout-port/item_grid.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout-port/item_grid.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout-port/activity_vistaaplicacion.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout-port/activity_vistaaplicacion.xml"
+    }
+]

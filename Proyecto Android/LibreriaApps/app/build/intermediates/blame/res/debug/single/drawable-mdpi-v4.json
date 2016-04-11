@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/arrows.png",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/drawable-mdpi/arrows.png"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/slide_in_bottom.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/slide_out_left.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/slide_out_left.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/zoom_back_in.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/zoom_back_in.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/zoom_forward_out.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/zoom_forward_out.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/zoom_back_out.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/zoom_back_out.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/slide_in_left.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/slide_out_right.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/slide_out_top.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/slide_in_top.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/slide_out_bottom.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/slide_in_right.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/anim/zoom_forward_in.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/anim/zoom_forward_in.xml"
+    }
+]

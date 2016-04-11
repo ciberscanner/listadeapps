@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.2.1_683a255df04dedcb4ede004451fb13c529291f4d.jar" />
+    </item>
+    <item
+        jar="/Users/diego/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.2/f1bc476cc167b18e66c297df599b2377131a8947/gson-2.6.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/pre-dexed/debug/gson-2.6.2_82ff60162ddbf8d5e481930e7aaf3664069fd7b7.jar" />
+    </item>
+    <item
+        jar="/Users/diego/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1_9e1df208a559df94c622b86a82a74f01ee356ce9.jar" />
+    </item>
+    <item
+        jar="/Users/diego/AndroidStudioProjects/LibreriaApps/app/libs/volley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/pre-dexed/debug/volley_1b157f42480fc7a70ccc55769245975ee6a8ebfc.jar" />
+    </item>
+    <item
+        jar="/Users/diego/AndroidStudioProjects/LibreriaApps/app/libs/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_71003c8c67f4ecb5db7c7ba15d99c0952f001da0.jar" />
+    </item>
+    <item
+        jar="/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1_2f404efffb6063e836ee38471d136d5a402ce960.jar" />
+    </item>
+
+</items>

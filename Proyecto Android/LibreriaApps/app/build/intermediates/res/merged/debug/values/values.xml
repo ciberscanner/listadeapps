@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isTablet">false</bool>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="allcat">Todas las categorías</string>
+    <string name="app_name">LibreriaApps</string>
+    <string name="desc">Descripción</string>
+    <string name="guion">-</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="name">Nombre</string>
+    <string name="pro">Creador:</string>
+    <string name="sle">Selecciona una de las categorías para listar las apps</string>
+    <string name="splash">Cargando</string>
+    <string name="title">Title</string>
+    <string name="visit">Visitar página web</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

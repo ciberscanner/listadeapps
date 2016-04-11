@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout/activity_splash.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout/entrada.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout/entrada.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout/item_grid.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout/item_grid.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout/item_categoria.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout/item_categoria.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout/contentapp.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout/contentapp.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout/activity_aplicaciones.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout/activity_aplicaciones.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout/activity_categorias.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout/activity_categorias.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout/activity_vistaaplicacion.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout/activity_vistaaplicacion.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout/fragment_list_apps.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout/fragment_list_apps.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout/simplerow.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout/simplerow.xml"
+    },
+    {
+        "merged": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/build/intermediates/res/merged/debug/layout/header.xml",
+        "source": "/Users/diego/AndroidStudioProjects/LibreriaApps/app/src/main/res/layout/header.xml"
+    }
+]

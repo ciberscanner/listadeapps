@@ -1,12 +1,8 @@
 package ciberscanner.app.model;
 
 import java.util.ArrayList;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
 import android.util.Log;
-import ciberscanner.app.utilities.ObjectJson;
+import ciberscanner.app.utilities.VJson;
 
 public class App {
 	// -----------------------------------------------------------------------------------
@@ -29,13 +25,11 @@ public class App {
 			"im:artist", "category", "im:releaseDate" };
 
 	public ArrayList<App> listaApps = new ArrayList<App>();
-	private ArrayList<ObjectJson> lista = new ArrayList<ObjectJson>();
-
 	public Boolean errorJson = true;
+	private VJson vjson = new VJson();
 
 	// -----------------------------------------------------------------------------------
-	// Constructor
-
+	//
 	public void setApp(String name, String image, String sumary, String price, String contentype, String rights,
 			String link, String id, String artist, String category, String relasedate) {
 		this.name = name;
@@ -53,49 +47,35 @@ public class App {
 
 	// -----------------------------------------------------------------------------------
 	/**
-	 * Retorno 1 para json procesado correctamente, Retorna -1 si le llego un
-	 * json vacio, Retorna -2 por error en el casting
+	 * Retorno 1 para json procesado correctamente, Retorna -1 si hay problemas
 	 */
 	public int getAppsfromJson(String json) {
-		try {
-			JSONArray jsonArray = new JSONArray(json);
-
-			if (jsonArray.equals(null)) {
-				Log.v("informe: ", "Problemas con el servidor");
-				return -1;
-			}
-			for (int i = 0; i < jsonArray.length(); i++) {
-				JSONObject jsonObject = jsonArray.getJSONObject(i);
-				ObjectJson ojson = new ObjectJson();
-				for (int j = 0; j < labels.length; j++) {
-					ojson.getData().add(jsonObject.getString(labels[j]));
-				}
-				lista.add(ojson);
-			}
-
-			for (int i = 0; i < lista.size(); i++) {
+		
+		if(vjson.fillObjectJsonfromJson(json, labels)==1){
+			for (int i = 0; i < vjson.lista.size(); i++) {
 				App aux = new App();
-				aux.setApp(lista.get(i).getData().get(0), lista.get(i).getData().get(1), lista.get(i).getData().get(2),
-						lista.get(i).getData().get(3), lista.get(i).getData().get(4), lista.get(i).getData().get(5),
-						lista.get(i).getData().get(6), lista.get(i).getData().get(7), lista.get(i).getData().get(8),
-						lista.get(i).getData().get(9), lista.get(i).getData().get(10));
+				aux.setApp(vjson.lista.get(i).getData().get(0), vjson.lista.get(i).getData().get(1),
+						vjson.lista.get(i).getData().get(2), vjson.lista.get(i).getData().get(3),
+						vjson.lista.get(i).getData().get(4), vjson.lista.get(i).getData().get(5),
+						vjson.lista.get(i).getData().get(6), vjson.lista.get(i).getData().get(7),
+						vjson.lista.get(i).getData().get(8), vjson.lista.get(i).getData().get(9),
+						vjson.lista.get(i).getData().get(10));
 
 				filtros(aux);
 
 				listaApps.add(aux);
 			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-			return -2;
+			return 1;
+		}else{
+			return -1;
 		}
-		return 1;
+		
 	}
 
 	// -----------------------------------------------------------------------------------
 	/** Filtra los json internos */
 	private void filtros(App aux) {
-		aux.setName(getSubJson(aux.getName(), "label"));
+		aux.setName(vjson.getSubJson(aux.getName(), "label"));
 
 		ImageApp ima = new ImageApp();
 
@@ -104,34 +84,19 @@ public class App {
 				aux.pictures.add(ima.listimages.get(i).getUrl());
 			}
 		}
-		aux.setRights(getSubJson(aux.getRights(), "label"));
-		aux.setCategory(getSubJson(aux.getCategory(), "label"));
-		aux.setSumary(getSubJson(aux.getSumary(), "label"));
+		
+		aux.setRights(vjson.getSubJson(aux.getRights(), "label"));
+		aux.setArtist(vjson.getSubJson1(aux.getArtist(), "label"));
+		aux.setCategory(vjson.getSubJson(aux.getCategory(), "label"));
+		aux.setSumary(vjson.getSubJson(aux.getSumary(), "label"));
+		aux.setLink(vjson.getSubJson(aux.getLink(), "href"));
+		
+		aux.setPrice(vjson.getSubJson(vjson.removeString(aux.getPrice()), "amount"));
+		
+		
 
 	}
 
-	// -----------------------------------------------------------------------------------
-	//
-	private String getSubJson(String json, String label) {
-		try {
-			JSONObject jsonObject = new JSONObject(removeString(json));
-			// Log.v("Resultado: ", jsonObject.getString(label));
-			return jsonObject.getString(label);
-		} catch (Exception ex) {
-			Log.v("Error: ", "pailas");
-			return "";
-		}
-	}
-
-	private String removeString(String txt) {
-		int aux = 0;
-		for (int i = 0; i < txt.length(); i++) {
-			if (txt.charAt(i) == '{') {
-				aux = i;
-			}
-		}
-		return txt.substring(aux);
-	}
 	// -----------------------------------------------------------------------------------
 	// Getters and Setters
 

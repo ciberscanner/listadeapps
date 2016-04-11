@@ -11,5 +11,7 @@
     <string name="name">Nombre</string>
     <string name="desc">Descripción</string>
     <string name="pro">Creador:</string>
+    <string name="visit">Visitar página web</string>
+    <string name="allcat">Todas las categorías</string>
 
 </resources>

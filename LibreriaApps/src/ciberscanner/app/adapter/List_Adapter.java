@@ -1,4 +1,4 @@
-package ciberscanner.app.model;
+package ciberscanner.app.adapter;
 
 import java.util.ArrayList;
 

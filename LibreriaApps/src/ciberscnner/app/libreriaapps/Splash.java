@@ -8,6 +8,7 @@ import com.android.volley.toolbox.Volley;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -27,8 +28,17 @@ public class Splash extends Activity {
 	//
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		boolean tabletSize = getResources().getBoolean(R.bool.isTablet);
+		if (tabletSize) {
+			setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+		} else {
+			setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		}
+		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
+		
+		
 
 		nt = new NetworkState(this.getApplicationContext());
 		appm = new AppManager(this.getApplicationContext());
@@ -118,6 +128,7 @@ public class Splash extends Activity {
 		Intent ac0 = new Intent(this, Categorias.class);
 		ac0.putExtra("json", mss);
 		startActivity(ac0);
+		overridePendingTransition(R.anim.zoom_forward_in, R.anim.zoom_forward_out);
 		finish();
 	}
 

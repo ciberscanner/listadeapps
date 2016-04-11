@@ -8,14 +8,15 @@ import java.util.Map.Entry;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
+import ciberscanner.app.adapter.List_Adapter;
 import ciberscanner.app.model.App;
-import ciberscanner.app.model.List_Adapter;
 
 public class Categorias extends Activity {
 	// -----------------------------------------------------------------------------------
@@ -34,6 +35,13 @@ public class Categorias extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_categorias);
+		
+		boolean tabletSize = getResources().getBoolean(R.bool.isTablet);
+		if (tabletSize) {
+			setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+		} else {
+			setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		}
 
 		title = (TextView) findViewById(R.id.txt_title);
 		title.setText("Categorías");
@@ -65,7 +73,7 @@ public class Categorias extends Activity {
 			categorias.add(e.getValue() + "");
 		}
 
-		lista.setAdapter(new List_Adapter(this, R.layout.header, categorias) {
+		lista.setAdapter(new List_Adapter(this, R.layout.item_categoria, categorias) {
 			@Override
 			public void onEntrada(Object entrada, View view) {
 				if (entrada != null) {
@@ -85,6 +93,11 @@ public class Categorias extends Activity {
 			}
 		});
 	}
+	
+	public void volver(View v){
+		overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+		finish();
+	}
 
 	// -----------------------------------------------------------------------------------
 	//
@@ -93,6 +106,13 @@ public class Categorias extends Activity {
 		ac0.putExtra("json", mss);
 		ac0.putExtra("filtro", filtro);
 		startActivity(ac0);
+		overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+	}
+	@Override
+	public void onBackPressed() {
+		// TODO Auto-generated method stub
+		super.onBackPressed();
+		overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
 	}
 
 }

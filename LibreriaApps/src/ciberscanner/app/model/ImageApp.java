@@ -2,11 +2,7 @@ package ciberscanner.app.model;
 
 import java.util.ArrayList;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import android.util.Log;
-import ciberscanner.app.utilities.ObjectJson;
+import ciberscanner.app.utilities.VJson;
 
 public class ImageApp {
 	// -----------------------------------------------------------------------------------
@@ -14,59 +10,30 @@ public class ImageApp {
 	private String url;
 	private String description;
 	private String[] labels = { "label", "attributes" };
-	
-	public ArrayList<ImageApp>listimages=new ArrayList<ImageApp>();
-	private ArrayList<ObjectJson> lista = new ArrayList<ObjectJson>();
+
+	public ArrayList<ImageApp> listimages = new ArrayList<ImageApp>();
+	private VJson vjson = new VJson();
 	// -----------------------------------------------------------------------------------
 	//
-
 	public void setImageApp(String url, String description) {
 		this.url = url;
 		this.description = description;
 	}
-	
+
 	// -----------------------------------------------------------------------------------
-		//
-	public int getImagesFromJson(String json){
-		//json=removeString(json);
-		try {
-			JSONArray jsonArray = new JSONArray(json);
-
-			if (jsonArray.equals(null)) {
-				Log.v("informe: ", "Problemas con el servidor");
-				return -1;
-			}
-			for (int i = 0; i < jsonArray.length(); i++) {
-				JSONObject jsonObject = jsonArray.getJSONObject(i);
-				ObjectJson ojson = new ObjectJson();
-				for (int j = 0; j < labels.length; j++) {
-					ojson.getData().add(jsonObject.getString(labels[j]));
-				}
-				lista.add(ojson);
-			}
-
-			for (int i = 0; i < lista.size(); i++) {
+	//
+	public int getImagesFromJson(String json) {
+		if (vjson.fillObjectJsonfromJson(json, labels) == 1) {
+			for (int i = 0; i < vjson.lista.size(); i++) {
 				ImageApp aux = new ImageApp();
-				aux.setImageApp(lista.get(i).getData().get(0), lista.get(i).getData().get(1));
+				aux.setImageApp(vjson.lista.get(i).getData().get(0), vjson.lista.get(i).getData().get(1));
 
 				listimages.add(aux);
 			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-			return -2;
+			return 1;
+		} else {
+			return -1;
 		}
-		return 1;
-	}
-	
-	private String removeString(String txt) {
-		int aux = 0;
-		for (int i = 0; i < txt.length(); i++) {
-			if (txt.charAt(i) == '{') {
-				aux = i;
-			}
-		}
-		return txt.substring(aux);
 	}
 
 	// -----------------------------------------------------------------------------------
